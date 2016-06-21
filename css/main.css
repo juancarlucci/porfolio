@@ -1,56 +1,624 @@
+/*portfolio*/
+
+/*global layout ++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*one page scrolling. Adapted from http://www.codeply.com/view/DRBmOoChfM
+all grid, cards, and containers from bootstrap*/
+
+
+html,
+body {
+	height: 100%;
+	background: url(../images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	background-color: #f02511;
+}
+
+
+.container-fluid {
+	width: 100%;
+	padding: 0;
+	padding-bottom: 2px;
+	min-height: 100%;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+
+
+.row {
+	width: 100%;
+}
+
+
+.btn {
+	/*margin-bottom: 12px;*/
+}
+
+
+.btn,
+.well,
+.panel {
+  /*border-radius: 0;*/
+}
+
+
+.btn-danger {
+  background-color: #f02511;
+}
+
+.btn-primary {
+	color: #f02511;
+}
+
+
+.text-danger, a.text-danger {
+  color: #f02511;
+}
+
+
+.btn-huge {
+  padding: 17px 22px;
+  font-size: 22px;
+}
+
+
+.card-title {
+	padding-bottom: 12px;
+}
+
+
+.row h2 {
+  margin-top: 100px;
+	margin-bottom: 30px;
+}
+
+
+.card-inverse {
+	height: 460px;
+	padding: 4px;
+	background-color: #000;
+	border-radius: 60px;
+}
+
+.card-block a {
+	cursor:pointer
+	color: #fff;
+}
+
+.card-footer {
+	color: #f02511
+}
+.list-group-item{
+	font-family: 'Poiret One', cursive;
+	font-size: 1.5em;
+	color: #fff
+	background-color: #32302f;
+	border: none;
+}
+.list-group-item:first-child{
+	background-color: #000;
+	border: none;
+	color: #fff;
+}
+
+a {
+  color: #fff;
+}
+
+
+a:hover {
+  color: #111;
+}
+
+
+section {
+	padding-top: 70px;
+  padding-bottom: 50px;
+  min-height: 100%;
+  min-height: calc(100% - 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+
+/*GLOBAL FONTS+++++++++++++++++++++++++++++++++++*/
+
 .title {
 	font-family: 'Poiret One', cursive;
-	text-align: right;
+	text-align: center;
+	font-size: 5em;
+	color: #fff;
+	padding-top: 1em;
+	position: relative;;
+	/*left: 50%;
+	transform: translate(-50%,-50%);*/
 }
-.sub_title, p, div {
+
+
+.sub-title,
+/*p,*/
+div,
+h2 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
-	text-align: right;
-}
-.fa-camera-retro{
-  font-size: 5em;
+
+	text-align: center;
+  color: #fff;
 }
 
-/*
-.progress-meter {
-	min-height: 15px;
-	border-bottom: 2px solid rgb(160, 160, 160);
-}
 
-.progress-meter > .meter {
-	position: relative;
-	float: left;
-	min-height: 15px;
-	border-width: 0px;
-	border-style: solid;
-	border-color: rgb(160, 160, 160);
-}
-
-.progress-meter > .meter-left {
-	border-left-width: 2px;
-}
-
-.progress-meter > .meter-right {
-	float: right;
-	border-right-width: 2px;
-}
-
-.progress-meter > .meter-right:last-child {
-	border-left-width: 2px;
-}
-
-.progress-meter > .meter > .meter-text {
+.sub-title {
+	font-size: 1.3em;
 	position: absolute;
-	display: inline-block;
-	bottom: -20px;
-	width: 100%;
-	font-weight: 700;
-	font-size: 0.85em;
-	color: rgb(160, 160, 160);
-	text-align: left;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%
 }
 
-.progress-meter > .meter.meter-right > .meter-text {
-	text-align: right;
+/*.sub-title {
+		font-size: 6em;
+}*/
+
+p:first-letter,
+h3:first-letter,
+.row>h2:first-letter {
+	font-size: 2.3em;
+	font-family: 'Poiret One', cursive, 'Adobe Garamond Pro', Garamond, Palatino,
+	'Palatino Linotype', Times, 'Times New Roman', Georgia, serif;
 }
-*/
+
+
+.col-sm-4 {
+	padding-right: 0;
+  padding-left: 20px;
+}
+
+/*SECTIONS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+=============================================================================*/
+
+/*navbar ++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*section-home++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+#section-home {
+	background-color: rgba(0,0,0,0.6);
+	/*color: #fff;*/
+}
+
+
+.logo {
+	margin-top: 5px;
+	margin-right: 3px;
+  margin-left: 13px;
+	height: 100%;
+}
+
+
+.navbar-trans {
+	background-color: ;
+  color: #877756;
+  border-width: 0;
+}
+
+
+.navbar-trans .navbar-brand,
+.navbar-trans >.container-fluid .navbar-brand {
+  padding: 14px;
+  color: #f02511;
+}
+
+
+.navbar-trans li>a:focus,
+.navbar-trans li.active {
+	background-color: #f02511;
+	color: #32302f;
+}
+
+
+.navbar-trans li>a:hover {
+	background-color: #f02511;
+	color: #fff;
+	opacity:0.5;
+}
+
+
+.navbar-trans a{
+  color: #cdcdcd;
+  letter-spacing: 1px;
+}
+
+
+.navbar-trans .form-control:focus {
+	border-color: #eee;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(100,100,100,0.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(100,100,100,0.6);
+}
+
+/*jumbotron from bootstrap+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*idea for jumbotron background from http://codepen.io/melsumner/pen/AvpjI. I created my own abstract
+using illustrator and photoshop*/
+
+/*.jumbotron {*/
+  /*background-color: #32302f;*/
+  /*background-image: url(../images/IMG_4679.jpg);*/
+	/*background-size: cover;*/
+	/*margin-bottom: 0;*/
+	/*z-index: 3;*/
+
+}
+
+
+/*.myBackground {
+  background-color: rgba(255,255,255, 0.2);
+  color: inherit;
+}*/
+
+/*section-skills (incuding Marketing) +++++++++++++++++++++++++++++++++++++*/
+
+/* MARKETING CONTENT Bootstrap
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.marketing h2 {
+  font-weight: normal;
+}
+
+
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+h3.card-title {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+/*this is for the svg logo javascript*/
+.javascript {
+	height: 98px;
+	/*trying to position the SVG to the right*/
+	position: relative;
+  margin-bottom: 16px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+
+.logo-align {
+	height: 105px;
+	/*trying to position the SVG to the right*/
+	position: relative;
+  margin-bottom: 16px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+
+.logo-align-ps {
+	height: 117px;
+	/*trying to position the SVG to the right*/
+	position: relative;
+  margin-bottom: 16px;
+	margin-top: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+
+#section-skills .card-inverse {
+	/*border-radius: 5px 30px 5px;*/
+	/*height: 100%;*/
+	background-color: #32302f!important;
+}
+
+
+#section-gallery1,
+#section-gallery2,
+#section-skills {
+	background-color: #000;
+	height: auto;
+	/*height to 1--% does not work responsively, had to change to auto*/
+	border-bottom: 40px;
+}
+
+
+#section-skills h2{
+  margin-top: 30px;
+}
+
+
+#section-skills {
+	padding-bottom: 60px;
+}
+
+
+
+.skills-title {
+	text-align: right;
+	font-weight: 600;
+	padding-right: 0;
+}
+
+/*progress bars from Bootstrap*/
+
+.progress {
+	background: rgba(205, 205, 205, 1);
+	border: 1px solid rgba(245, 245, 245, .5);
+	border-radius: 30px;
+	height: 13px;
+}
+
+
+.progress-bar {
+	background: #32302f;
+}
+
+/* CAROUSEL from Bootstrap
+------------------+++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* Carousel base class */
+.carousel {
+  /*height: 500px;*/
+	max-height: 500px;
+  margin-bottom: 0;
+}
+
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 1000;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+
+.carousel-caption > h1 {
+	margin-top: 13%;
+	/*margin-top used to centnter caption text */
+}
+
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  /*height: 500px;*/
+	max-height: 500px;
+  background-color: #32302f;
+}
+
+
+.carousel-inner > .item > img {
+	/*background-size: cover;*/
+  position: relative;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+.btn-primary {
+	background-color: #32302f!important;
+	border-color: rgba(245, 245, 245, .5)!important;
+	/*margin-top: 20px;*/
+}
+.btn:focus {
+  outline: none;
+}
+
+
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .icon-next {
+	margin-top: 15px;
+}
+
+
+@media (max-width: 768px) {
+	.carousel-caption h1 {
+		margin-top: 3%;
+		font-size: 2em;
+
+	}
+  .carousel-caption p {
+	  font-size: 1em;
+	}
+  .carousel-caption, .item > img {
+		max-height: 236px;
+	  position: absolute;
+	}
+	.btn-primary {
+		padding: 4px 9px;
+		font-size: 90%;
+		line-height: 1.2;
+	}
+}
+
+
+/*section-projects++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+#section-projects {
+	background-color: #000;
+	padding-bottom: 100px;
+}
+
+
+#section-projects .card-inverse {
+	background-color: #32302f;
+	/*border-radius: 50px;*/
+}
+
+
+.fa-stack-1x {
+	color: #32302f;
+}
+
+
+.fa-heartbeat {
+	color: #f02511;
+}
+
+
+.section-title {
+	margin-top: 170px;
+	color: #ccc;
+}
+
+
+/*section-photography +++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+#section-photography,
+#section-photography2,
+#section-photography3 {
+	background-color: #32302f;
+	/*max-height: 60px;*/
+	min-height: 170px;
+}
+
+
+/*Footer Reveal adapted from https://www.youtube.com/watch?v=VH0iYda6KNs*/
+footer {
+	background-color: rgba(50, 48, 47, 0.95);
+  color: #fff;
+  padding-top: 18px;
+  padding-bottom: 40px;
+	/*position: relative;*/
+	bottom: 0;
+	width: 100%
+}
+
+
+footer .nav>li>a {
+  padding: 3px;
+  color: #f02511;
+}
+
+
+footer .nav>li>a:hover {
+  background-color: transparent;
+	color: #fff;
+}
+
+
+/*behavior +++++++++++++++++++++++++++++++++++++++++++++++++++++
+====================================================================*/
+
+
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  margin-left: -15px;
+  display: block;
+  padding: 0;
+  text-align: center;
+  z-index: 2
+}
+
+
+.scroll-up {
+  position: fixed;
+  display: block;
+  z-index: 999;
+  bottom: 2em;
+  right: 2em;
+}
+
+
+.scroll-up a {
+  background-color: rgba(205, 205, 205, 0.5);
+  display: block;
+	border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.75em;
+  line-height: 30px;
+
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+
+@media (max-width: 768px) {
+  .v-center {
+    height: 50%;
+    overflow: visible;
+    margin: 0;
+		/*this margin, when set to auto, is too large, but when set to 0 is does not allow
+		for centering of container-fluid, so I turned it off*/
+    /*position: absolute;*/
+    top: 0; left: 0; bottom: 0; right: 0;
+		display: flex;
+  }
+
+
+	h1 {
+		font-size: 2em;
+		flex-grow: 1;
+		/*position: relative;*/
+	}
+
+
+	p {
+		font-size: 1.1em;
+		/*position: relative;*/
+	}
+
+
+	.title,
+	.jumbotron h1 {
+		font-size: 2.5em;
+		top: 17%;
+		width: 100%;
+		margin-top:-10;
+	}
+
+
+	.scroll-down {
+		left: 81%;
+	}
+
+
+	.sub-title {
+		font-size: 1em;
+	}
+
+}
