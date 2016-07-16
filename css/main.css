@@ -391,7 +391,6 @@ h3.card-title {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 1000;
-	background-color: rgba(0, 0, 0, 0.5);
 	position: absolute;
 	top: 0;
 	right: 0;
